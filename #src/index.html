@@ -5,31 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <title>creative agency</title>
 </head>
+
 <body>
 
-    
 <!-- creative agency  -->
 
-    <div class="wr-preview">
-        
-        @@include('_header.html')
-
-            <section class="home-container">
-                <h1>creative agency</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-                <div class="home-container-history">
-                    <img src="./img/home/home_last.png" alt="home">
-
-                    <div class="home-container-info">
-                        <h2>history of agency</h2>
-                        <p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore mangam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore. </p>
-                        <a href="#" class="home-btn"><span>read more</span></a>
-                    </div>
+    <div class="wr-preview">  
+        <section class="home-container">
+            @@include("_header.html")
+            <h1>creative agency</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="home-container-history">
+                <img src="./img/home/home_last.png" alt="home">
+                <div class="home-container-info">
+                    <h2>history of agency</h2>
+                    <div class="element"></div>
+                    <p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore mangam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore. </p>
+                    <button class="home-btn" type="submit">read more</button>
                 </div>
-            </section>
+            </div>
+        </section>
     </div>
 
     <!-- why choose us -->
@@ -54,7 +51,7 @@
                             <li>user experience</li>
                         </ul>
                     </div>
-
+                    
                     <div class="choose-container-inner">
                         <div class="choose-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.46 49.46">
@@ -82,8 +79,7 @@
                             <li>product desing</li>
                             <li>integretion ad companies</li>
                         </ul>
-                    </div>
-                
+                    </div>               
                     <div class="choose-container-inner">
                         <div class="choose-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 299.915 299.915">
@@ -125,18 +121,54 @@
                             <li>integretion ad companies</li>
                         </ul>
                     </div>
-                </div>
-                
+                </div>              
                 <img src="./img/home/img_choose.png" alt="choose">
-                
+            </div>
+        </section>
+    </div>
+
+    <!-- our portfolio -->
+    
+    <div class="wr-portfolio">
+        <section class="portfolio-container">
+            <h2>our portfolio</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <div class="portfolio-block">
+                <div class="portfolio-category">                      
+                    <h4>choose category</h4>
+                    <ul>
+                        <li><a href="#">all</a></li>
+                        <li><a href="#">webdesign</a></li>
+                        <li><a href="#">graphic design</a></li>
+                        <li><a href="#">fasion</a></li>
+                        <li><a href="#">logo design</a></li>
+                        <li><a href="#">advertising</a></li>
+                    </ul>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./img/home/img1.png" alt="portfolio">
+                    <img src="./img/home/img4.png" alt="portfolio">
+                    <img src="./img/home/img7.png" alt="portfolio">
+                </div>
+                <div class="portfolio-item">
+                    <img src="./img/home/img2.png" alt="portfolio">
+                    <img src="./img/home/img5.png" alt="portfolio">
+                    <img src="./img/home/img8.png" alt="portfolio">
+                </div>
+                <div class="portfolio-item">
+                    <img src="./img/home/img3.png" alt="portfolio">
+                    <img src="./img/home/img6.png" alt="portfolio">
+                    <img src="./img/home/img9.png" alt="portfolio">
+                </div>
             </div>
         </section>
     </div>
 
     <!-- footer -->
-    @@include('_footer.html')
 
+    @@include("_footer.html")
 
     <script src="./js/script.min.js"></script>
+
 </body>
 </html>

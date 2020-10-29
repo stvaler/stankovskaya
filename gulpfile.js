@@ -43,7 +43,7 @@ let { src, dest } = require('gulp'),
     imagemin = require("gulp-imagemin"),
     webp = require("gulp-webp"),
     webphtml = require("gulp-webp-html"),
-    webpcss = require("gulp-webp-css"),
+    // webpcss = require("gulp-webp-css"),
     // svgSprite = require("gulp-svg-sprite"),
     ttf2woff = require("gulp-ttf2woff"),
     ttf2woff2 = require("gulp-ttf2woff2"),
@@ -79,11 +79,11 @@ function css() {
         )
         .pipe(
             autoprefixer({
-                overrideBrowserslist:["last 5 versions"],
+                overrideBrowserslist:["last 3 versions"],
                 cascade: true
             })
         )
-        .pipe(webpcss())
+        // .pipe(webpcss())
         .pipe(dest(path.build.css))
         .pipe(clean_css())
         .pipe(
