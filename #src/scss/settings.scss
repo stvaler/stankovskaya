@@ -1,0 +1,198 @@
+h2 {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-size: 30px;
+    color:#60606e;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: -1px;
+    z-index: 10;
+    text-align: center;
+}
+h2::before {
+    content: "";
+    background-color: #7beec7;
+    width: 68px;
+    height: 20px;  
+    position: absolute;
+    top: 18px;
+    z-index: -1;
+}
+h4 {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-size: 18px;
+    color:#60606e;
+    text-transform: uppercase;
+}
+p {
+    font-family: "OpenSans", serif;
+    font-weight: 400;
+    text-align: center;
+    color: #60606e;
+    line-height: 1.5;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+a {
+    color:#60606e;
+    text-decoration: none;
+} 
+.button {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    height: 50px;
+    width: 165px;
+    border: none;
+    background-color: #7beec7;
+    color: #fff;
+} 
+.button-name {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    height: 30px;
+    width: 100px;
+    border: none;
+    background-color: #7beec7;
+    color: #fff;
+}
+.button-card {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    height: 50px;
+    width: 135px;
+    border: none;
+    background-color: #7beec7;
+    color: #fff;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
+.button:hover,
+.button-name:hover,
+.button-card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.wr-home {
+    background-image: url("../img/home/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px; 
+    .home-container {
+        margin: 0 auto;
+        max-width: 1150px;
+        padding: 0 5px;  
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1150px;
+            margin: 0 auto;  
+            padding: 30px 5px 0;        
+            .logo {
+                color: #60606e;
+                font-size: 18px;
+                font-family: "Montserrat", serif;
+                font-weight: 700;
+                text-transform: uppercase;             
+            }
+            ul {
+                display: flex;
+                color: #60606e;
+                font-family: "Montserrat", serif;
+                font-weight: 400;
+                font-size: 14px;
+                text-transform: uppercase;
+                align-items: center;
+                margin: 0;
+            }
+            li {
+                margin-left: 37px;  
+            }
+            a {
+                font-size: 14px;
+                font-family: "Montserrat", serif;
+                font-weight: 400;
+            }   
+            a:hover {
+                border-bottom: 1px solid #60606e;
+            }           
+        }       
+        h1 {
+            font-family: "Montserrat", serif;
+            font-weight: 700;
+            font-size: 36px;
+            color:#60606e;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 190px auto 20px;
+        }
+        .home-us-nav {
+            font-family: "OpenSans", serif;
+            font-weight: 700;
+            text-align: center;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin: 0 auto;
+            span {
+                color: #60606e;
+            }
+            a:hover {
+                border-bottom: 1px solid #60606e;
+            }
+        }
+    }
+}
+@media all and (max-width: 770px) {
+    .wr-home {
+        height: 300px; 
+        .home-container {
+            header {       
+                .logo {
+                    font-size: 16px;
+                }
+                ul {
+                    display: none;
+                }  
+            }
+            h1 {
+                margin: 100px auto 20px;
+                font-size: 24px;
+            }
+            .home-us-nav {
+                font-size: 12px;
+            }
+        }
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h2::before {
+        content: "";
+        background-color: #7beec7;
+        width: 52px;
+        height: 20px;  
+        position: absolute;
+        top: 15px;
+        z-index: -1;
+    }
+    .button {
+        font-size: 10px;
+        height: 40px;
+        width: 120px;
+    } 
+    h4 {
+        font-size: 14px;
+    }
+}
