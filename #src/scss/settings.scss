@@ -28,6 +28,7 @@ h4 {
 p {
     font-family: "OpenSans", serif;
     font-weight: 400;
+    font-size: 14px;
     text-align: center;
     color: #60606e;
     line-height: 1.5;
@@ -166,31 +167,8 @@ a {
             }
             h1 {
                 margin: 100px auto 20px;
-                font-size: 24px;
-            }
-            .home-us-nav {
-                font-size: 12px;
+                font-size: 26px;
             }
         }
-    }
-    h2 {
-        font-size: 24px;
-    }
-    h2::before {
-        content: "";
-        background-color: #7beec7;
-        width: 52px;
-        height: 20px;  
-        position: absolute;
-        top: 15px;
-        z-index: -1;
-    }
-    .button {
-        font-size: 10px;
-        height: 40px;
-        width: 120px;
-    } 
-    h4 {
-        font-size: 14px;
     }
 }
