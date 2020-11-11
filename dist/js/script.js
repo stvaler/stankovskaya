@@ -1,5 +1,5 @@
 menu.onclick = function() {
-    var x = document.getElementById("mytopnav");
+    var x = document.getElementById("topnav");
 
     if(x.className === "header-nav") {
         x.className += " responsive";
