@@ -99,7 +99,7 @@ a {
     background-image: url("../img/home/header.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px; 
+    background-position: bottom center; 
     .home-container {
         margin: 0 auto;
         max-width: 1150px;
@@ -111,7 +111,7 @@ a {
             color:#60606e;
             text-transform: uppercase;
             text-align: center;
-            margin: 140px auto 20px;
+            margin: 180px auto 20px;
         }
     }
 }
@@ -122,6 +122,7 @@ a {
     font-size: 14px;
     text-transform: uppercase;
     margin: 0 auto;
+    padding-bottom: 165px;
     span {
         color: #60606e;
     }
@@ -129,17 +130,18 @@ a {
         border-bottom: 1px solid #60606e;
     }
 }
+
+
+
 @media all and (max-width: 770px) {
-    .wr-home {
-        height: 300px; 
-    }
-    header {       
-        .logo {
-            font-size: 16px;
-        } 
-    }
+
     h1 {
         margin: 100px auto 20px;
         font-size: 26px;
+    }
+    .page-title {
+        p {
+            max-width: 100%;
+        }
     }
 }
