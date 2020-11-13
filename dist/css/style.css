@@ -1124,6 +1124,7 @@ footer .footer-container {
 
 .founder-content .founder-inner {
   padding-top: 150px;
+  padding-bottom: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1169,13 +1170,23 @@ footer .footer-container {
 }
 
 .founder-item .founder-list {
-  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
 }
 
 .founder-item .founder-list span {
-  width: 16px;
-  height: 6px;
   background-color: #60606e;
+  height: 5px;
+  width: 15px;
+  margin-left: 5px;
+}
+
+.founder-item .founder-list span:hover {
+  background-color: #7beec7;
+  width: 25px;
+  cursor: pointer;
 }
 
 .founder-icon {
@@ -1958,6 +1969,10 @@ footer .footer-container {
 
   .dream-team-inner .button-block p {
     margin-bottom: 10px;
+  }
+
+  .founder-item .founder-list {
+    margin-bottom: 30px;
   }
 
   .founder-inner {
