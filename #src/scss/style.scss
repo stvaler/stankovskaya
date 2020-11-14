@@ -57,7 +57,7 @@ header {
     align-items: center;
     max-width: 1150px;
     margin: 0 auto;  
-    padding: 0 5px 0;        
+    padding: 50px 50px 0 5px;        
     .logo {
         color: #60606e;
         font-size: 18px;
@@ -66,7 +66,6 @@ header {
         text-transform: uppercase;             
     }
 }
-
 .nav-header {
     font-family: "Montserrat", serif;
     font-weight: 400;
@@ -79,8 +78,8 @@ header {
     width: 20px;
     height: 20px;
     position: relative; 
+    padding: 10px;
     cursor: pointer;
-    .menu {
         .line {
             display: flex;
             flex-direction: column;
@@ -89,114 +88,50 @@ header {
             width: 20px;
             margin-top: 5px;
         }
-    }
 }	
-
 .home, .about, .services, .blog,  .contact {
-    width: 100px;
-    height: 20px;
-    position: relative; 
+    width: 120px;
+    height: 50px; 
     cursor: pointer;
     display: none;
 }
 .nav-header:hover .home {
     display: inline-block;
-    position: absolute;
-    top: 100%;
+    top: 70%;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 10px;
+    position: absolute;
 }
 .nav-header:hover .about {
     display: inline-block;
-    position: absolute;
-    top: 200%;
+    top: 120%;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 10px;
+    position: absolute;
 }
 .nav-header:hover .services {
     display: inline-block;
+    top: 170%;
+    text-align: center;
+    padding: 10px; 
     position: absolute;
-    top: 300%;
-    text-align: center; 
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 .nav-header:hover .blog {
     display: inline-block;
-    position: absolute;
-    top: 400%;
+    top: 220%;
     text-align: center; 
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 10px;
+    position: absolute;
 }
 .nav-header:hover .contact {
     display: inline-block;
-    position: absolute;
-    top: 500%;
+    top: 270%;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 10px;
+    position: absolute;
 }
 a:hover {
     border-bottom: 1px solid #60606e;
-}
-
-
-
-
-
-
-
-.header-nav {
-    ul {
-        display: flex;
-        color: #60606e;
-        font-family: "Montserrat", serif;
-        font-weight: 400;
-        font-size: 14px;
-        text-transform: uppercase;
-        align-items: center;
-    }
-    li {
-        margin-left: 37px;  
-    }
-    a {
-        display: none;
-        font-family: "Montserrat", serif;
-        font-size: 14px;
-        font-weight: 400;
-        text-align: center;
-        padding: 14px 16px;
-    }   
-    a:not(.icon):hover {
-        border-bottom: 1px solid #60606e;
-    }
-    .icon {
-        display: inline-block;
-        color: #60606e;
-        .line {
-            display: flex;
-            flex-direction: column;
-            background-color: #60606e;
-            height: 1px;
-            width: 20px;
-            margin-top: 5px;
-        }
-    }
-    .responsive {
-        position: relative;
-        .icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-    }
-}
-.header-nav.header-nav.responsive a {
-    display: block;
-    text-align: center;
 }
 .home-container-history {
     display: flex;
