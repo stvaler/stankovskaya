@@ -1,5 +1,5 @@
 
-
+// let project_folder = require("path").basename(__dirname);
 let project_folder="dist";
 let source_folder="#src";
 let fs = require("fs");
@@ -107,6 +107,22 @@ function js() {
         .pipe(dest(path.build.js))
         .pipe(browsersync.stream())
 }
+// function js() {
+//         return src(["#src/js/jquery.min.js", "#src/js/slick.min.js", path.src.js])
+//             .pipe(fileinclude())
+//             // .pipe(dest(path.build.js))
+//             .pipe(concat('script.js'))
+//             .pipe(
+//                 uglify()
+//             )
+//             .pipe(
+//                 rename({
+//                     suffix: ".min"
+//                 })
+//             )
+//             .pipe(dest(path.build.js))
+//             .pipe(browsersync.stream())
+//     }
 
 function images() {
     return src(path.src.img)
