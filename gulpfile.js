@@ -92,37 +92,37 @@ function css() {
         .pipe(browsersync.stream())
 }
 
-function js() {
-    return src(path.src.js)
-        .pipe(fileinclude())
-        .pipe(dest(path.build.js))
-        .pipe(
-            uglify()
-        )
-        .pipe(
-            rename({
-                extname: ".min.js"
-            })
-        )
-        .pipe(dest(path.build.js))
-        .pipe(browsersync.stream())
-}
 // function js() {
-//         return src(["#src/js/jquery.min.js", "#src/js/slick.min.js", path.src.js])
-//             .pipe(fileinclude())
-//             // .pipe(dest(path.build.js))
-//             .pipe(concat('script.js'))
-//             .pipe(
-//                 uglify()
-//             )
-//             .pipe(
-//                 rename({
-//                     suffix: ".min"
-//                 })
-//             )
-//             .pipe(dest(path.build.js))
-//             .pipe(browsersync.stream())
-//     }
+//     return src(path.src.js)
+//         .pipe(fileinclude())
+//         .pipe(dest(path.build.js))
+//         .pipe(
+//             uglify()
+//         )
+//         .pipe(
+//             rename({
+//                 extname: ".min.js"
+//             })
+//         )
+//         .pipe(dest(path.build.js))
+//         .pipe(browsersync.stream())
+// }
+function js() {
+        return src(["#src/js/jquery.min.js", "#src/js/slick.min.js", path.src.js])
+            .pipe(fileinclude())
+            .pipe(dest(path.build.js))
+            // .pipe(concat('script.js'))
+            .pipe(
+                uglify()
+            )
+            .pipe(
+                rename({
+                    suffix: ".min"
+                })
+            )
+            .pipe(dest(path.build.js))
+            .pipe(browsersync.stream())
+    }
 
 function images() {
     return src(path.src.img)
