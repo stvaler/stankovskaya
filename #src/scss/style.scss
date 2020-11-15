@@ -31,7 +31,7 @@
         text-align: center;
         border: 10px solid #60606e;
         max-width: 520px;
-        margin: 160px auto 25px;
+        margin: 65px auto 25px;
         padding: 12px 8px;
         position: relative;
     }
@@ -51,88 +51,62 @@
     }     
 }
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     max-width: 1150px;
     margin: 0 auto;  
-    padding: 50px 50px 0 5px;        
+    padding: 35px 0 5px;        
     .logo {
         color: #60606e;
         font-size: 18px;
         font-family: "Montserrat", serif;
         font-weight: 700;
-        text-transform: uppercase;             
+        text-transform: uppercase;           
     }
-}
-.nav-header {
-    font-family: "Montserrat", serif;
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #60606e;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    position: relative; 
-    padding: 10px;
-    cursor: pointer;
+    .header-nav {
+        font-family: "Montserrat", serif;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #60606e;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        a {
+            padding-top: 10px;
+            z-index: -100;
+        }
+    }
     .line {
         display: flex;
         flex-direction: column;
         background-color: #60606e;
         height: 1px;
-        width: 20px;
+        width: 25px;
         margin-top: 5px;
     }
-    a:hover {
-        border-bottom: 1px solid #60606e;
+    .header-nav a.icon {
+        align-items: flex-end;
+        margin-top: -30px;
+        display: inline-flex;
+        flex-direction: column;
+        color: #60606e;
+        z-index: 10;
+        margin-bottom: 0;
     }
-}	
-.home, .about, .services, .blog,  .contact {
-    width: 120px;
-    height: 50px; 
-    cursor: pointer;
-    display: none;
+    .header-nav.responsive {
+        position: relative;
+    }
+    .header-nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header-nav.header-nav.responsive a {
+        display: inline-flex;
+        justify-content: flex-end;
+        text-align: right;
+        z-index: 10;
+    }
 }
-.nav-header:hover .home {
-    display: inline-block;
-    top: 70%;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-}
-.nav-header:hover .about {
-    display: inline-block;
-    top: 120%;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-}
-.nav-header:hover .services {
-    display: inline-block;
-    top: 170%;
-    text-align: center;
-    padding: 10px; 
-    position: absolute;
-}
-.nav-header:hover .blog {
-    display: inline-block;
-    top: 220%;
-    text-align: center; 
-    padding: 10px;
-    position: absolute;
-}
-.nav-header:hover .contact {
-    display: inline-block;
-    top: 270%;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-}
-
 .home-container-history {
     display: flex;
     justify-content: space-between;
@@ -1600,6 +1574,9 @@ h6 {
     header {      
         .logo {
             font-size: 10px;          
+        }
+        .header-nav {
+            font-size: 10px;  
         }
     }
     .home-container-history {

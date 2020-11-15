@@ -1,14 +1,14 @@
 // бургер
 
-// menu.onclick = function() {
-//     var x = document.getElementById("topnav");
+menu.onclick = function() {
+    let x = document.getElementById("topnav");
 
-//     if(x.className === "header-nav") {
-//         x.className += " responsive";
-//     } else{
-//         x.className = "header-nav";
-//     }
-// }
+    if(x.className === "header-nav") {
+        x.className += " responsive";
+    } else{
+        x.className = "header-nav";
+    }
+}
 
 // соритровка на главной странице
 
