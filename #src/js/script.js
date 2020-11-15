@@ -1,13 +1,21 @@
 // бургер
 
-menu.onclick = function() {
-    let x = document.getElementById("topnav");
 
-    if(x.className === "header-nav") {
-        x.className += " responsive";
-    } else{
-        x.className = "header-nav";
+function myFunction() {
+    document.getElementById("topnav").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.burger')) {
+    let headerdowns = document.getElementsByClassName("header-nav");
+    let i;
+    for (i = 0; i < headerdowns.length; i++) {
+      let openHeaderdown = headerdowns[i];
+      if (openHeaderdown.classList.contains('show')) {
+        openHeaderdown.classList.remove('show');
+      }
     }
+  }
 }
 
 // соритровка на главной странице
