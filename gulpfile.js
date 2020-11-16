@@ -45,7 +45,8 @@ let { src, dest } = require('gulp'),
     webphtml = require("gulp-webp-html"),
     ttf2woff = require("gulp-ttf2woff"),
     ttf2woff2 = require("gulp-ttf2woff2"),
-    fonter = require("gulp-fonter");
+    fonter = require("gulp-fonter"),
+    concat = require("gulp-concat");
 
 function browserSync(params) {
     browsersync.init({
@@ -110,8 +111,8 @@ function css() {
 function js() {
         return src(["#src/js/jquery.min.js", "#src/js/slick.min.js", path.src.js])
             .pipe(fileinclude())
-            .pipe(dest(path.build.js))
-            // .pipe(concat('script.js'))
+            // .pipe(dest(path.build.js))
+            .pipe(concat('script.js'))
             .pipe(
                 uglify()
             )

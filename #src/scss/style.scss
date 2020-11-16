@@ -669,100 +669,100 @@ footer {
 
 
 // cлайдер
-// .slide-team {
-//     max-width: 1050px;
-//     margin: 0 auto;
-//     margin-top: 20px;
-// }
-// .slide-avatar {
-//     padding-bottom: 40px;
-// }
-// .slide-header {
-//     position: relative;
-//     overflow: hidden;
-// }
-// .slide-header ul {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     position: absolute;
-//     bottom: -100px;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     transition-duration: .5s;
-// }
-// .slide-header li {
-//     margin: 0 2px;
-// }
-// .slide-header img {
-//     margin-bottom: 20px;
-//     width: 100%;
-// }
-// .slide-header .slide-item h5 {
-//     font-family: "Montserrat", serif;
-//     font-weight: 700;
-//     font-size: 12px;
-//     color:#60606e;
-//     text-transform: uppercase;
-//     margin-bottom: 20px;
-// }
-// .slide-header .slide-item .slide-networks {
-//     font-family: "Montserrat", serif;
-//     font-weight: 700;
-//     text-transform: uppercase;
-//     text-decoration: none;
-//     font-size: 12px;
-//     border: none;
-//     background-color: #7beec7;
-//     color: #fff;
-// }
-// .slick-slide { 
-//     width: 250px; 
-//     margin: 0 10px;
-// }
-// .slick-slide img {
-//     max-width: 250px;
-//     height: 300px;
-//     object-fit: cover;
-// }
-// .slide-header:hover img {
-//     opacity: 0.2;
-// }
-// .slide-avatar:hover .slide-header ul {
-//     bottom: 50%;
-// }
-// .slide-team .slick-prev, 
-// .slide-team .slick-next {
-//     width: 25px;
-//     height: 300px;
-//     background-color: #7beec7;
-//     z-index: 10;
-//     bottom: 5px;
-//     top: 150px;
-// }
-// .slide-team .slick-prev:hover, 
-// .slide-team .slick-next:hover {
-//     opacity: 0.2;
-// }
-// .slide-team .slick-prev:before,
-// .slide-team .slick-next:before  {
-//     content: '';
-//     display: block;
-//     width: 22px;
-//     height:30px;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     opacity: 1;
-//     background-size: cover;
-// }
-// .slick-prev {
-//     left: 0px;
-// }
-// .slick-next {
-//     right: 0px;
-// }
+.slide-team {
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.slide-avatar {
+    padding-bottom: 40px;
+}
+.slide-header {
+    position: relative;
+    overflow: hidden;
+}
+.slide-header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition-duration: .5s;
+}
+.slide-header li {
+    margin: 0 2px;
+}
+.slide-header img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.slide-header .slide-item h5 {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    font-size: 12px;
+    color:#60606e;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.slide-header .slide-item .slide-networks {
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    border: none;
+    background-color: #7beec7;
+    color: #fff;
+}
+.slick-slide { 
+    width: 250px; 
+    margin: 0 10px;
+}
+.slick-slide img {
+    max-width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+.slide-header:hover img {
+    opacity: 0.2;
+}
+.slide-avatar:hover .slide-header ul {
+    bottom: 50%;
+}
+.slide-team .slick-prev, 
+.slide-team .slick-next {
+    width: 25px;
+    height: 300px;
+    background-color: #7beec7;
+    z-index: 10;
+    bottom: 5px;
+    top: 150px;
+}
+.slide-team .slick-prev:hover, 
+.slide-team .slick-next:hover {
+    opacity: 0.2;
+}
+.slide-team .slick-prev:before,
+.slide-team .slick-next:before  {
+    content: '';
+    display: block;
+    width: 22px;
+    height:30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    background-size: cover;
+}
+.slick-prev {
+    left: 0px;
+}
+.slick-next {
+    right: 0px;
+}
 
 
 .founder-item {

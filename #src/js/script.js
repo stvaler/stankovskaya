@@ -27,7 +27,8 @@ let removeClass = function(arr, className){
     .map(btn => btn.classList.remove(className));
 };
 
-btnsFilterContainer.addEventListener('click', function(e) {
+if (btnsFilterContainer) {
+  btnsFilterContainer.addEventListener('click', function(e) {
     let target = e.target;
     if (!e.target.closest('button')) return;
     let btn = e.target.closest('button');
@@ -52,42 +53,44 @@ let arrBtns = Array.prototype.slice.call(btns);
     .map(block => block.classList.add('hide'));
 });
 
+}
+
+
 // слайдер
-// $(document).ready(function(){
-//   $('.your-class').slick({
-//     setting-name: setting-value
-//   });
-// });
+
+$(document).ready(function(){
+  $('.slide-team').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    variableWidth: true,
+    responsive: [
+        {
+          breakpoint: 990,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 770,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 540,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+
+      ]
+});
+
+});
 
 
-// $('.slide-team').slick({
-//     slidesToShow: 4,
-//     slidesToScroll: 1,
-//     variableWidth: true,
-//     responsive: [
-//         {
-//           breakpoint: 960,
-//           settings: {
-//             slidesToShow: 3,
-//             slidesToScroll: 1,
-//             infinite: true,
-//             dots: true
-//           }
-//         },
-//         {
-//           breakpoint: 720,
-//           settings: {
-//             slidesToShow: 2,
-//             slidesToScroll: 1
-//           }
-//         },
-//         {
-//           breakpoint: 540,
-//           settings: {
-//             slidesToShow: 1,
-//             slidesToScroll: 1
-//           }
-//         }
-
-//       ]
-// });
