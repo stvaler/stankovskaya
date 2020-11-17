@@ -620,6 +620,12 @@ a {
   cursor: pointer;
 }
 
+.button:focus,
+.button-name:focus,
+.button-card:focus {
+  outline: none;
+}
+
 .wr-home {
   background-image: url("../img/home/header.png");
   background-repeat: no-repeat;
@@ -1429,7 +1435,7 @@ footer .footer-container {
           justify-content: center;
   grid-template-columns: repeat(3, 260px 30px) 260px;
   grid-template-rows: 330px 30px 330px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .people-one {
@@ -1533,13 +1539,10 @@ footer .footer-container {
 }
 
 .slide-team {
-  max-width: 1050px;
+  max-width: 1130px;
   margin: 0 auto;
-  margin-top: 20px;
-}
-
-.slide-avatar {
-  padding-bottom: 40px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .slide-header {
@@ -1574,7 +1577,6 @@ footer .footer-container {
 }
 
 .slide-header img {
-  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -1584,7 +1586,6 @@ footer .footer-container {
   font-size: 12px;
   color: #60606e;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .slide-header .slide-item .slide-networks {
@@ -1599,13 +1600,13 @@ footer .footer-container {
 }
 
 .slick-slide {
-  width: 250px;
-  margin: 0 10px;
+  width: 260px;
+  margin: 0 15px;
 }
 
 .slick-slide img {
-  max-width: 250px;
-  height: 300px;
+  max-width: 260px;
+  height: 330px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1621,11 +1622,11 @@ footer .footer-container {
 .slide-team .slick-prev,
 .slide-team .slick-next {
   width: 25px;
-  height: 300px;
+  height: 330px;
   background-color: #7beec7;
-  z-index: 10;
+  z-index: 20;
   bottom: 5px;
-  top: 150px;
+  top: 165px;
 }
 
 .slide-team .slick-prev:hover,
@@ -1636,17 +1637,6 @@ footer .footer-container {
 .slide-team .slick-prev:before,
 .slide-team .slick-next:before {
   content: '';
-  display: block;
-  width: 22px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  opacity: 1;
-  background-size: cover;
 }
 
 .slick-prev {
@@ -3267,6 +3257,12 @@ h6 {
         -ms-flex-align: center;
             align-items: center;
     margin-right: 5px;
+  }
+
+  form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   form ::-webkit-input-placeholder {

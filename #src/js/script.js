@@ -67,7 +67,7 @@ $(document).ready(function(){
         {
           breakpoint: 990,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
             dots: true
@@ -76,18 +76,10 @@ $(document).ready(function(){
         {
           breakpoint: 770,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 540,
-          settings: {
             slidesToShow: 1,
             slidesToScroll: 1
           }
         }
-
       ]
 });
 

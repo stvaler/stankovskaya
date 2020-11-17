@@ -588,7 +588,7 @@ footer {
     justify-content: center;
     grid-template-columns: repeat(3, 260px 30px) 260px ; 
     grid-template-rows: 330px 30px 330px; 
-    padding-bottom: 30px; 
+    margin-bottom: 30px; 
 }
 .people-one {
     grid-column: 1/2;
@@ -666,16 +666,13 @@ footer {
     cursor: pointer;
 }
 
-
-
 // cлайдер
+
 .slide-team {
-    max-width: 1050px;
+    max-width: 1130px;
     margin: 0 auto;
-    margin-top: 20px;
-}
-.slide-avatar {
-    padding-bottom: 40px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 .slide-header {
     position: relative;
@@ -695,7 +692,6 @@ footer {
     margin: 0 2px;
 }
 .slide-header img {
-    margin-bottom: 20px;
     width: 100%;
 }
 .slide-header .slide-item h5 {
@@ -704,7 +700,6 @@ footer {
     font-size: 12px;
     color:#60606e;
     text-transform: uppercase;
-    margin-bottom: 20px;
 }
 .slide-header .slide-item .slide-networks {
     font-family: "Montserrat", serif;
@@ -717,12 +712,12 @@ footer {
     color: #fff;
 }
 .slick-slide { 
-    width: 250px; 
-    margin: 0 10px;
+    width: 260px; 
+    margin: 0 15px;
 }
 .slick-slide img {
-    max-width: 250px;
-    height: 300px;
+    max-width: 260px;
+    height: 330px;
     object-fit: cover;
 }
 .slide-header:hover img {
@@ -734,11 +729,11 @@ footer {
 .slide-team .slick-prev, 
 .slide-team .slick-next {
     width: 25px;
-    height: 300px;
+    height: 330px;
     background-color: #7beec7;
-    z-index: 10;
+    z-index: 20;
     bottom: 5px;
-    top: 150px;
+    top: 165px;
 }
 .slide-team .slick-prev:hover, 
 .slide-team .slick-next:hover {
@@ -747,15 +742,6 @@ footer {
 .slide-team .slick-prev:before,
 .slide-team .slick-next:before  {
     content: '';
-    display: block;
-    width: 22px;
-    height:30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    background-size: cover;
 }
 .slick-prev {
     left: 0px;
@@ -1988,6 +1974,7 @@ h6 {
         margin-right: 5px;
     }
     form {
+        align-items: center;
         ::placeholder {
             font-size: 10px;
         }

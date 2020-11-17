@@ -104,6 +104,11 @@ a {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     cursor: pointer;
 }
+.button:focus,
+.button-name:focus,
+.button-card:focus {
+    outline: none;
+}
 .wr-home {
     background-image: url("../img/home/header.png");
     background-repeat: no-repeat;
