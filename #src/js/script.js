@@ -65,6 +65,15 @@ $(document).ready(function(){
     variableWidth: true,
     responsive: [
         {
+          breakpoint: 1210,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
           breakpoint: 990,
           settings: {
             slidesToShow: 2,
